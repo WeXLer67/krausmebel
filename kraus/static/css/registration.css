@@ -1,0 +1,78 @@
+.registration_background {
+    z-index: 10000000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(17, 17, 17, 0.5);
+    transition: all 0.5s ease;
+    display: none;
+}
+
+.registration {
+    /* width: 500px;
+    height: 700px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    z-index: 100000010;
+    padding: 10px;
+    background: #fff1e0;
+    border: 5px solid #FCDDBC;
+    display: none;
+    padding: 30px 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: registration 0.5s forwards;
+}
+
+@keyframes registration {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.t-input {
+    /* margin-bottom: 10px; */
+    font-size: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 480px;
+    border: 0 none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.img_popup {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.t-form__submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.t-descr {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 300;
+    color: #000;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просьба</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&subset=latin,cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="kraus/static/css/form.css" type="text/css" media="" />
+    <link rel="stylesheet" href="kraus/static/css/rega.css" type="text/css" madia="all" />
+    <link rel="stylesheet" href="kraus/static/css/tilda-forms-1.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="kraus/static/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="kraus/static/css/tilda-blocks-2.14.css" type="text/css" media="all" />
+</head>
+
+<body>
+    <div id="popup" class="mymodal">
+      <div class="overlay">
+        <div class="content">
+            <form method='POST'>
+                {% csrf_token %}
+                <div id="popup_content" class="popup_content">
+                    <div class="img_popup close" style="width: 23px; height: 23px;">
+                        <svg class="img_popupv fa fa-times" style="width: 23px; height: 23px;" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#000000" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+                    </div>
+                    <div>
+                        <p class="p-popup popup_title">Чтобы сделать заказ, пожалуйста, зарегистрируйтесь на сайте.</p>
+                    </div>
+                    <div class="t-form__submit">
+                        <a href="registration"><button type="button" class="t-submit" style="color:#ffffff;border:3px solid #6e2f44; background-color: #963D5A;">Зарегистрироваться</button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <script>
+        //Создаем переменную, в которую сохраняем наше модальное окно
+        var modal = $('.mymodal');
+        
+        //Функция устанавливает значение свойства display в то, которое указано в ее параметрах при вызове
+        function setModal(display){
+          modal.css('display', display);
+        }
+        
+        //Функция обрабатывает клик по кнопке "Оставить заявку"
+        $('.mybtn_popup').click(function(){
+          setModal('block');
+        });
+        
+        //Функция обрабатывает клик по кнопке "Закрыть"
+        $('.close').click(function(){
+          setModal('none');
+        });
+        
+        //Функция обрабатывает клики по модальному окну, и, если клик не произошел не по блоку content и не по его дочерним элементам, то закрываем модальное окно
+        $(modal).click(function(e){
+          var target = e.target;
+          if(!($('.content').is(target)) && $('.content').has(target).length ===0){
+            setModal('none');
+          }
+        });
+        
+        //Если нажата клавиша ESC, то закрываем модальное окно
+        $(document).keydown(function(e){
+          if(e.which == 27 ){
+            setModal('none');
+          }
+        });
+    </script>
+</body>
+
+</html>

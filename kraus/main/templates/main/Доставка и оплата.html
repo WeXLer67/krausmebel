@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="kraus/static/css/tilda-blocks-2.14.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="kraus/static/css/Доставка и оплата.css" type="text/css" media="all" />
+    <link rel="shortcut icon" href="kraus/static/images/.svg/Component_1.ico" type="image/x-icon">
+    <title>Доставка и оплата</title>
+</head>
+
+<body class="t-body">
+     {% include 'main/header.html' %}
+    <div class="сards row">
+        <div class="delivery">
+            <img src="kraus/static/images/Доставка и оплата/Доставка.png" style="width: 100px; height: 100px;" />
+            <h1 class="titles">Доставка</h1>
+            <p class="content">Мы осуществляем доставку транспортными компаниями в любой город.</p>
+        </div>
+        <div class="payment">
+            <img src="kraus/static/images/Доставка и оплата/Монеты.png" style="width: 100px; height: 100px;" />
+            <h1 class="titles">Оплата</h1>
+            <p class="content">После заключения договора, вносится предоплата 70% на расчетный счет компании (для удобства высылаем QR-код) или переводом на карту генерального директора.<br>Чек об оплате предоставляем.</p>
+        </div>
+    </div>
+    {% include 'main/footer.html' %}
+</body>
+
+</html>

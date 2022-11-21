@@ -1,0 +1,1037 @@
+{
+  "id": "e178d55f-760e-4bb6-9ff2-1f06be8d4cea",
+  "version": "2.0",
+  "name": "Kraus.mebel",
+  "url": "https://krausmebel.ru/",
+  "tests": [{
+    "id": "b0607d4f-d642-4fd1-ae73-1419a21f5d27",
+    "name": "открытие товара без входа",
+    "commands": [{
+      "id": "099bddb5-b1b9-43e6-a6c9-10f1ec21daf4",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27270955-cdca-4fff-9935-e675b05e68a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d323c9f3-32c4-4113-b3b3-525730060a41",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Каталог",
+      "targets": [
+        ["linkText=Каталог", "linkText"],
+        ["css=.t-menusub__target-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог')]", "xpath:link"],
+        ["xpath=//div[@id='nav401392187']/div/div[3]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2320f67f-24e1-42cc-a1bc-f22c725974de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Столы обеденные",
+      "targets": [
+        ["linkText=Столы обеденные", "linkText"],
+        ["css=.t-menusub__list-item:nth-child(1) > .t-menusub__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Столы обеденные')]", "xpath:link"],
+        ["xpath=//div[@id='nav401392187']/div/div[3]/div/ul/li[2]/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'diningtables')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Столы обеденные')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d84894a-4979-46a4-a086-deb7456f1184",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t754__bgimg",
+      "targets": [
+        ["css=.t754__bgimg", "css:finder"],
+        ["xpath=//a[@id='tovar']/div/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8098fbd-f0ed-4859-b984-014310067d62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t754__bgimg",
+      "targets": [
+        ["css=.t754__bgimg", "css:finder"],
+        ["xpath=//a[@id='tovar']/div/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "033d7e23-7fed-4bd2-ae0a-880007a5350d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t754__textwrapper",
+      "targets": [
+        ["css=.t-popup", "css:finder"],
+        ["xpath=//div[@id='rec403743456']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff59a46b-f502-4361-8fda-8685f437f33e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mybtn_popup > span",
+      "targets": [
+        ["css=.mybtn_popup > span", "css:finder"],
+        ["xpath=//div[@id='1']/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Связаться с нами')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60d5bfba-85ff-4f88-bd97-79bf87c965a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-popup",
+      "targets": [
+        ["css=.p-popup", "css:finder"],
+        ["xpath=//div[@id='popup_content']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Чтобы сделать заказ, пожалуйста, зарегистрируйтесь на сайте.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "33bd2bb2-5dfb-4b3f-9d3b-4d5b32991d61",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.p-popup",
+      "targets": [
+        ["css=.p-popup", "css:finder"],
+        ["xpath=//div[@id='popup_content']/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Чтобы сделать заказ, пожалуйста, зарегистрируйтесь на сайте.')]", "xpath:innerText"]
+      ],
+      "value": "Чтобы сделать заказ, пожалуйста, зарегистрируйтесь на сайте."
+    }]
+  }, {
+    "id": "9df8d019-4995-4ea9-80b4-852ac852079c",
+    "name": "корректные логин и пароль (вход)",
+    "commands": [{
+      "id": "bd0f747c-b9e9-4366-a357-d32f7a4fc1ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2bf35f3d-4dfd-4825-ad88-7806695092a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ca34c59-5a2c-4308-a3ff-85f312c9daa3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > .img_header",
+      "targets": [
+        ["css=.btn > .img_header", "css:finder"],
+        ["xpath=//div[@id='nav401392187']/div/div[3]/div/ul/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5a232fe-d420-4fc8-8e1b-d8f4b91f8751",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Elovek"
+    }, {
+      "id": "c7e45fbb-14f5-4944-a63a-a27aa47a23df",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "12345678kar"
+    }, {
+      "id": "4842d91b-9906-4ebd-9e76-d0fe62bbfb40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-submit",
+      "targets": [
+        ["css=.t-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/div[7]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19f78f37-aae8-41b6-9387-8c72868d1308",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t050__descr",
+      "targets": [
+        ["css=.t050__descr", "css:finder"],
+        ["xpath=//div[@id='rec403019348']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e385046c-6016-425e-866a-3fa89a74152b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.t050__descr",
+      "targets": [
+        ["css=.t050__descr", "css:finder"],
+        ["xpath=//div[@id='rec403019348']/div/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "Elovek"
+    }]
+  }, {
+    "id": "1b58455c-799b-4fb3-9fc4-a8c13c171bc4",
+    "name": "неверный логин (вход)",
+    "commands": [{
+      "id": "8f8135f4-d520-4b23-a75f-6a5de6510eae",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c96ed49-48f1-454a-909c-ad77f8c350ff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba1e087f-fb74-444a-ac9e-01d903647eb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > .img_header",
+      "targets": [
+        ["css=.btn > .img_header", "css:finder"],
+        ["xpath=//div[@id='nav401392187']/div/div[3]/div/ul/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bb8bc4e-5427-4f80-ac8a-c8bc9c394fb7",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Elovek"
+    }, {
+      "id": "256ee9ef-fbc9-4c7f-9d02-e58117443b40",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "12345678kar"
+    }, {
+      "id": "31c0f3bb-c2ea-47e8-9be8-ef2508064b27",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ea2aab3-9685-41cb-b668-da9eb0e0b372",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Elovekw"
+    }, {
+      "id": "607b851a-b2f4-496f-87fd-8f04b0931ec6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-submit",
+      "targets": [
+        ["css=.t-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/div[7]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2db5b751-bd1d-47bd-b149-b1be23ae0149",
+      "comment": "",
+      "command": "click",
+      "target": "css=.errorlist > li",
+      "targets": [
+        ["css=.errorlist > li", "css:finder"],
+        ["xpath=//div[@id='rec403744220']/div/form/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Пожалуйста, введите правильные имя пользователя и пароль. Оба поля могут быть чувствительны к регистру.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f518852-ad0e-4bec-b7a0-36f1d1d56864",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.errorlist > li",
+      "targets": [
+        ["css=.errorlist > li", "css:finder"],
+        ["xpath=//div[@id='rec403744220']/div/form/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Пожалуйста, введите правильные имя пользователя и пароль. Оба поля могут быть чувствительны к регистру.')]", "xpath:innerText"]
+      ],
+      "value": "Пожалуйста, введите правильные имя пользователя и пароль. Оба поля могут быть чувствительны к регистру."
+    }]
+  }, {
+    "id": "d260b9ca-d0ee-4b11-92c9-4940aea4e880",
+    "name": "неверный пароль (вход)",
+    "commands": [{
+      "id": "df9f32ea-e552-4eab-af07-7ee929059f51",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c173785f-9a8b-4de0-b7ef-93572adf89d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bca053f8-934b-4b23-817a-4468276d0fda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > .img_header",
+      "targets": [
+        ["css=.btn > .img_header", "css:finder"],
+        ["xpath=//div[@id='nav401392187']/div/div[3]/div/ul/li[4]/a/img", "xpath:idRelative"],
+        ["xpath=//li[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9a8ca73-4fc0-4f8e-819e-0300d5e64aab",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Elovek"
+    }, {
+      "id": "e3c395f9-ae1e-43bb-bb57-ba883d11ea06",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "12345678kar"
+    }, {
+      "id": "b9c436cf-e19d-4637-a0d3-758bdff31b15",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba402846-9b3d-4577-bcf8-c55a03199fa6",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "12345678karw"
+    }, {
+      "id": "04f28740-595a-4fec-80ee-b5fa06228756",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-submit",
+      "targets": [
+        ["css=.t-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/div[7]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25fc69e6-ef3a-46cf-a8de-e3adf4673ca5",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password",
+      "targets": [
+        ["id=id_password", "id"],
+        ["name=password", "name"],
+        ["css=#id_password", "css:finder"],
+        ["xpath=//input[@id='id_password']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "12345678kar"
+    }, {
+      "id": "57a1e4f1-2f2a-4276-abc3-521904b0f6ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.errorlist > li",
+      "targets": [
+        ["css=.errorlist > li", "css:finder"],
+        ["xpath=//div[@id='rec403744220']/div/form/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Пожалуйста, введите правильные имя пользователя и пароль. Оба поля могут быть чувствительны к регистру.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b921b06-b3c6-489d-9a3e-af9ead6c879a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.errorlist > li",
+      "targets": [
+        ["css=.errorlist > li", "css:finder"],
+        ["xpath=//div[@id='rec403744220']/div/form/div[2]/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Пожалуйста, введите правильные имя пользователя и пароль. Оба поля могут быть чувствительны к регистру.')]", "xpath:innerText"]
+      ],
+      "value": "Пожалуйста, введите правильные имя пользователя и пароль. Оба поля могут быть чувствительны к регистру."
+    }]
+  }, {
+    "id": "475990c4-81c5-4378-b46e-0696976ec628",
+    "name": "сторонняя ссылка vk ",
+    "commands": [{
+      "id": "6b6e631c-e4b4-4ef3-a0bd-bf193720e624",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de74f707-52c0-4f7f-847f-bbcbcf37972f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d32064fd-7c11-4779-a981-006ab6e56977",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-sociallinks__item:nth-child(1) img",
+      "targets": [
+        ["css=.t-sociallinks__item:nth-child(1) img", "css:finder"],
+        ["xpath=//div[@id='rec401410161']/div/div/div[3]/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8504",
+      "windowTimeout": 2000
+    }, {
+      "id": "82167bc5-7b62-4d2a-acdb-8142a9a8d841",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8504}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c436cad0-9e05-49b4-96bc-1c30feef0ecd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page_name",
+      "targets": [
+        ["css=.page_name", "css:finder"],
+        ["xpath=//div[@id='group']/div/div[2]/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Kraus | Мебель для дома и бизнеса на заказ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "680dd741-ff05-42fa-ae02-c9bdb07fc917",
+    "name": "проверка контактов",
+    "commands": [{
+      "id": "e6075dd9-13b3-43fa-8634-422c666726a8",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29aad787-2955-4df6-81a9-0abf9ea23017",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7663aa46-aebf-4829-8218-c8aaba8fca64",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Контакты",
+      "targets": [
+        ["linkText=Контакты", "linkText"],
+        ["css=.t977__col-inner:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакты')]", "xpath:link"],
+        ["xpath=//div[@id='rec401410161']/div/div/div[2]/div[3]/div/ul/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/contacts')]", "xpath:href"],
+        ["xpath=//div[3]/div/ul/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Контакты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0cbc26a-fb85-47dc-b8f2-0000472b9d20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_h1",
+      "targets": [
+        ["css=.header_h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Наши контакты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6f400de-f5bb-43df-a765-e8831b251808",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.header_h1",
+      "targets": [
+        ["css=.header_h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Наши контакты')]", "xpath:innerText"]
+      ],
+      "value": "Наши контакты"
+    }]
+  }, {
+    "id": "b8d9e8ef-8cf3-40e6-a744-cdb02af42c99",
+    "name": "проверка контактов через новость",
+    "commands": [{
+      "id": "3d3fa839-8a39-47e3-8a0d-3383691d10fc",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "934b8ac7-3076-41df-8388-f1401118200e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bea2db93-68f2-4fba-a913-2e5af3cb70fb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.active img",
+      "targets": [
+        ["css=.active img", "css:finder"],
+        ["xpath=//div[@id='t-carousel401398795']/div/div/figure/a/img", "xpath:idRelative"],
+        ["xpath=//figure/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19f8b15d-330e-4bf2-b351-1153fed29cc4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.active img",
+      "targets": [
+        ["css=.active img", "css:finder"],
+        ["xpath=//div[@id='t-carousel401398795']/div/div/figure/a/img", "xpath:idRelative"],
+        ["xpath=//figure/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5776a85c-8dc8-46b5-953c-3addc8189025",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t406__title",
+      "targets": [
+        ["css=.t406__title", "css:finder"],
+        ["xpath=//div[@id='t-carousel401405922']/div/div/div/a/div/div/div[3]/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "697b497a-533f-454a-8f2a-b15962b7c28a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Показать на карте",
+      "targets": [
+        ["linkText=Показать на карте", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Показать на карте')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/contacts#map')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Показать на карте')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1c79d4b-dde1-4e4b-a5ab-104cdab22d13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header_h1",
+      "targets": [
+        ["css=.header_h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Наши контакты')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1baad85-5b28-46ee-ad07-5ddf8a58889a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.header_h1",
+      "targets": [
+        ["css=.header_h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Наши контакты')]", "xpath:innerText"]
+      ],
+      "value": "Наши контакты"
+    }]
+  }, {
+    "id": "5ae497f4-4c74-4f8c-be64-6b911bbc00bf",
+    "name": "открытие товара с входом",
+    "commands": [{
+      "id": "5493b416-ad18-4eee-94de-e95590ce82f6",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9facd526-cebc-4b5e-be31-64b811a108f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4b617d6-dbd8-47e4-ad2a-27c4e44a94fb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.active img",
+      "targets": [
+        ["css=.active img", "css:finder"],
+        ["xpath=//div[@id='t-carousel401398795']/div/div/figure/a/img", "xpath:idRelative"],
+        ["xpath=//figure/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bb4fa39-a0b2-4c1c-987d-a609e849e5fe",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.active img",
+      "targets": [
+        ["css=.active img", "css:finder"],
+        ["xpath=//div[@id='t-carousel401398795']/div/div/figure/a/img", "xpath:idRelative"],
+        ["xpath=//figure/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba762e5b-de23-4c3e-9204-65d0964cbbc5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Каталог",
+      "targets": [
+        ["linkText=Каталог", "linkText"],
+        ["css=.t-menusub__target-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Каталог')]", "xpath:link"],
+        ["xpath=//div[@id='nav401392187']/div/div[3]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[3]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b300ef71-136b-46e2-92f1-9f8b81ae7a40",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Столы обеденные",
+      "targets": [
+        ["linkText=Столы обеденные", "linkText"],
+        ["css=.t-menusub__list-item:nth-child(1) > .t-menusub__link-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Столы обеденные')]", "xpath:link"],
+        ["xpath=//div[@id='nav401392187']/div/div[3]/div/ul/li[2]/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'diningtables')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Столы обеденные')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a159312-3ba3-42f3-ac29-2365205766b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t754__bgimg",
+      "targets": [
+        ["css=.t754__bgimg", "css:finder"],
+        ["xpath=//a[@id='tovar']/div/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95cf0c42-9b85-4cc9-8929-ce25468a6c6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t754__textwrapper",
+      "targets": [
+        ["css=.t-popup", "css:finder"],
+        ["xpath=//div[@id='rec403743456']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3936289d-a41d-492b-808f-db2dde1ef869",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t754__bgimg",
+      "targets": [
+        ["css=.t754__bgimg", "css:finder"],
+        ["xpath=//a[@id='tovar']/div/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61c724ec-96d6-4274-973c-f17cd9aaf85b",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.t754__bgimg",
+      "targets": [
+        ["css=.t754__bgimg", "css:finder"],
+        ["xpath=//a[@id='tovar']/div/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5160d01e-baa9-4255-91df-30fcb79ccd73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mybtn_popup > span",
+      "targets": [
+        ["css=.mybtn_popup > span", "css:finder"],
+        ["xpath=//div[@id='1']/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Связаться с нами')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d357e16-4f98-44d9-ac18-9aa10470dbdb",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup_content",
+      "targets": [
+        ["id=popup_content", "id"],
+        ["css=#popup_content", "css:finder"],
+        ["xpath=//div[@id='popup_content']", "xpath:attributes"],
+        ["xpath=//div[@id='popup']/div/div/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c36761cb-934e-4ecf-9864-8afe66aba259",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popup_title",
+      "targets": [
+        ["css=.popup_title", "css:finder"],
+        ["xpath=//div[@id='popup_content']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed133807-5c3e-49f0-8655-6db2781cd94a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popup_title",
+      "targets": [
+        ["css=.popup_title", "css:finder"],
+        ["xpath=//div[@id='popup_content']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3bef039-a834-4291-87db-4565325022e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.popup_title",
+      "targets": [
+        ["css=.popup_title", "css:finder"],
+        ["xpath=//div[@id='popup_content']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Оставьте контакты"
+    }]
+  }, {
+    "id": "b0b80386-c61d-4f5e-b249-393874346abe",
+    "name": "регистрация",
+    "commands": [{
+      "id": "0941f470-83c1-4699-ab1d-d9e8b61f9687",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df180216-ba3d-4292-b30e-cfeb66c95da1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e7d846f-d24d-4482-8938-de2c7a4f0b84",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t462__list_item:nth-child(5) .img_header",
+      "targets": [
+        ["css=.t462__list_item:nth-child(5) .img_header", "css:finder"],
+        ["xpath=//div[@id='nav401392187']/div/div[3]/div/ul/li[5]/a/img", "xpath:idRelative"],
+        ["xpath=//li[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fba27c22-4f68-47fe-868b-8737a56e1835",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/form/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "u1627618"
+    }, {
+      "id": "db456994-8442-4e2a-827f-709b9d9f108b",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password1",
+      "targets": [
+        ["id=id_password1", "id"],
+        ["name=password1", "name"],
+        ["css=#id_password1", "css:finder"],
+        ["xpath=//input[@id='id_password1']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/form/div[2]/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "4dNMemk27M6PG4f8"
+    }, {
+      "id": "cfb59256-2ab4-43a8-ad23-d4f1d2b31c57",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/form/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92db91c1-69f7-4f1b-a074-650420e4853c",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_username",
+      "targets": [
+        ["id=id_username", "id"],
+        ["name=username", "name"],
+        ["css=#id_username", "css:finder"],
+        ["xpath=//input[@id='id_username']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/form/div[2]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "Elovek"
+    }, {
+      "id": "102574dd-20ff-4bf4-b735-0d890d97eb48",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_password1",
+      "targets": [
+        ["id=id_password1", "id"],
+        ["name=password1", "name"],
+        ["css=#id_password1", "css:finder"],
+        ["xpath=//input[@id='id_password1']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/form/div[2]/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "12345678kar"
+    }, {
+      "id": "22e1272c-2a01-4813-9680-0457dbeb9e77",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-submit",
+      "targets": [
+        ["css=.t-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='rec403744220']/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Зарегистрироваться')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e22882a-dafe-4481-bc80-bbdd0d462dda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.registration > div:nth-child(5)",
+      "targets": [
+        ["css=.registration > div:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='rec403744220']/form/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a53925c9-d56f-4a3e-a14a-e0a3da6ba8b1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.registration > div:nth-child(5)",
+      "targets": [
+        ["css=.registration > div:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='rec403744220']/form/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div[4]", "xpath:position"]
+      ],
+      "value": "* пожалуйста, указывайте город корректно, это необходимо для расчёта доставки."
+    }]
+  }, {
+    "id": "3d594d2e-99b0-47de-bedc-8a550cc2d4b1",
+    "name": "сторонняя ссылка wildberries",
+    "commands": [{
+      "id": "3e6d5511-0bb8-4ce9-a185-78e18a5c12dc",
+      "comment": "",
+      "command": "open",
+      "target": "https://krausmebel.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcd9c238-a7b0-4592-aaf5-c11653da981e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74a86155-ab14-417e-9eab-0860f97dc373",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-sociallinks__item:nth-child(5) img",
+      "targets": [
+        ["css=.t-sociallinks__item:nth-child(5) img", "css:finder"],
+        ["xpath=//div[@id='rec401410161']/div/div/div[3]/div/div/div/div[5]/a/img", "xpath:idRelative"],
+        ["xpath=//div[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db9da0d7-c709-4475-9e00-adb90d5ef60f",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainContainer",
+      "targets": [
+        ["id=mainContainer", "id"],
+        ["css=#mainContainer", "css:finder"],
+        ["xpath=//div[@id='mainContainer']", "xpath:attributes"],
+        ["xpath=//main[@id='body-layout']/div[2]", "xpath:idRelative"],
+        ["xpath=//main/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c462bce1-111d-4767-93c4-58f7484e10e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.brand-custom-header__name",
+      "targets": [
+        ["css=.brand-custom-header__name", "css:finder"],
+        ["xpath=//div[@id='name']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Kraus.mebel')]", "xpath:innerText"]
+      ],
+      "value": "Kraus.mebel"
+    }]
+  }],
+  "suites": [{
+    "id": "dd5522e3-15a8-4e2a-ad4d-030dbc65f5e1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b0607d4f-d642-4fd1-ae73-1419a21f5d27"]
+  }],
+  "urls": ["https://krausmebel.ru/"],
+  "plugins": []
+}

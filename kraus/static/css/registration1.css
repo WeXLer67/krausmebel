@@ -1,0 +1,55 @@
+.registration {
+    width: 500px;
+    height:100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.form-input{
+    margin: 0;
+    height: 40px;
+    width: 454px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    outline: none;
+    border-radius: 0;
+    margin-bottom:20px;
+    color: #000000; 
+    border: 3px solid #FCDDBC;
+    
+}
+
+label {
+     font-family: 'Roboto', Arial, sans-serif;
+     font-size: 20px;
+}
+
+.t-submit {
+    text-align: center;
+    height: 60px;
+    font-size: 16px;
+    padding: 0 60px 0 60px;
+    /*-webkit-appearance: none;*/
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 30px 0 0 0;
+    color:#ffffff;
+    border:3px solid #6e2f44;
+    background-color: #963D5A;
+}
+
+.t-popup__close-wrapper{
+    text-align: right;
+}
+
+.img_popup {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: right;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+
+    <link rel="stylesheet" href="kraus/static/css/registration1.css" type="text/css" madia="all" />
+    <link rel="stylesheet" href="kraus/static/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="kraus/static/css/tilda-blocks-2.14.css" type="text/css" media="all" />
+    <link rel="shortcut icon" href="kraus/static/images/.svg/Component_1.ico" type="image/x-icon">
+
+    <script src="kraus/static/js/tilda-phone-mask-1.1.min.js"></script>
+
+</head>
+
+<body class="t-body">
+    
+    <div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="4988544" data-tilda-page-id="24951416" data-tilda-page-alias="shelving" data-tilda-formskey="08af72a0637ac2d1bae297cef4988544" data-tilda-lazy="yes">
+        {% include 'main/header.html' %}
+        <div id="rec403744220" class="r t-rec t-rec_pt_135 t-rec_pb_135" style="padding-top:135px;padding-bottom:135px; " data-animationappear="off" data-record-type="754">
+            <form class="registration" method="post">
+                <div class="t-section__container t-container">
+                    <div class=" t-col_12">
+                        <div class="t-section__topwrapper t-align_center">
+                            <div class="t-section__title t-title t-title_xs" field="btitle" style="color: #000000;">Регистрация&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+                {% csrf_token %}
+                 <!--as_p для того, чтобы каждый элемент формы был с новой строки -->
+                <div>{{ form.as_p }}</div>
+                <div>{{ profile_form.as_p }}</div>
+                <div style="text-align: center; margin-top: -10px; width: 100%; hight: 100%"><span style="color: red;">*</span> пожалуйста, указывайте город корректно, это необходимо для расчёта доставки.</div>
+                <div style="text-align: center;"><button type="submit" class="t-submit">Зарегистрироваться</button></div>
+            </form>
+        </div>
+        {% include 'main/footer.html' %}
+    </div> 
+    
+</body>
+
+</html>

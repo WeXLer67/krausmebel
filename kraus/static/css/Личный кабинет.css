@@ -1,0 +1,12 @@
+.container {
+    
+    line-height: 1.5;
+    margin-left: 200px;
+}
+
+.square {
+    background: white;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+}

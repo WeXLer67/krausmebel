@@ -1,0 +1,41 @@
+* body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0%;
+}
+
+.сards {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin: 100px 0 100px 0;
+}
+
+.delivery {
+    max-width: 700px;
+    max-height: 800px;
+    background-color: #FFE8CE;
+    text-align: center;
+    padding: 40px;
+    line-height: 2;
+}
+
+.payment {
+    max-width: 700px;
+    max-height: 800px;
+    background-color: #FFE8CE;
+    text-align: center;
+    padding: 40px;
+    line-height: 2;
+}
+
+.titles {
+    font-size: 40px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.content {
+    font-size: 20px;
+    margin-top: 5px;
+}

@@ -1,0 +1,145 @@
+.mymodal{
+    display:none;
+}
+
+.mymodal .overlay{
+  z-index: 100000000000000000000;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  /*background: rgba(0,0,0,0,7);*/
+}
+
+.mymodal .content{
+  display:block;
+  margin:50px auto;
+  width:500px;
+    background: #fff1e0;
+    border: 5px solid #FCDDBC;
+  padding:20px;
+  /*color: #333333;*/
+  position:relative;
+}
+
+.mymodal .close{
+  position:absolute;
+  right:20px;
+  top:20px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+/*.popup_background {*/
+/*    z-index: 10000000;*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    background: rgba(17, 17, 17, 0.5);*/
+/*    transition: all 0.5s ease;*/
+/*    display: none;*/
+/*}*/
+
+/*.popup {*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    z-index: 100000010;*/
+/*    padding: 30px;*/
+/*    background: #fff1e0;*/
+/*    border: 5px solid #FCDDBC;*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    opacity: 0;*/
+/*    animation: popup 0.5s forwards;*/
+/*    margin-left: 645px;*/
+/*    margin-top: 249px;*/
+/*}*/
+
+/*@keyframes popup {*/
+/*    0% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    100% {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+
+/*.img_popup {*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    float: right;*/
+/*    position: relative;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.popup_content {*/
+/*    text-align: center;*/
+/*}*/
+.popup_title, .popup_message, .popup_send {
+    margin: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*.popup_body {*/
+/*    font-family: 'Roboto', Arial, sans-serif;*/
+/*    font-weight: 300;*/
+/*    color: #000;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.5;*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*.popup_footer {*/
+/*    font-family: 'Roboto', Arial, sans-serif;*/
+/*    font-weight: 300;*/
+/*    color: #000;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.5;*/
+/*    font-weight: 600;*/
+/*}*/
+
+/*.popup_int {*/
+/*    margin: 5px 0 10px 0;*/
+/*    padding: 5px 15px;*/
+/*    border: 3px solid #FCDDBC;*/
+/*    font-family: 'Roboto', Arial, sans-serif;*/
+/*    font-weight: 300;*/
+/*    color: #000;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.5;*/
+/*    outline: none;*/
+/*}*/
+
+/*.popup_int:focus {*/
+/*    margin: 5px 0 10px 0;*/
+/*    padding: 5px 15px;*/
+/*    border: 3px solid #FCDDBC;*/
+/*    font-family: 'Roboto', Arial, sans-serif;*/
+/*    font-weight: 300;*/
+/*    color: #000;*/
+/*    font-size: 16px;*/
+/*    line-height: 1.5;*/
+/*    outline: none;*/
+/*}*/
+
+/*.popup_name_int {*/
+/*    font-weight: 600;*/
+/*    color: #000;*/
+/*    padding-right: 130px;*/
+/*}*/
+
+/*.int_email {*/
+/*    padding-right: 165px;*/
+/*}*/
+
+/*.p-popup {*/
+/*    font-size: 25px;*/
+/*    margin-top: 30px;*/
+/*}*/
