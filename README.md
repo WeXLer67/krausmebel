@@ -1,5 +1,4 @@
-# krausmebel
-<h1 align="center">loyalty  system</h1>
+<h1 align="center">krausmebel.ru</h1>
 <h3 align="center">Интренет магазин для продажи премиальной мебели.</h3>
 
 <p><strong>Предпосылки</strong></p>
